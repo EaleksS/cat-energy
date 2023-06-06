@@ -1,0 +1,60 @@
+@import "/src/app/styles/variables";
+
+.btn {
+  height: 50px;
+  border: 0;
+
+  background: transparent;
+  cursor: pointer;
+  padding: 0 16px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  position: relative;
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &.active {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &.def {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.primary {
+  background-color: $basic_green;
+
+  @media (min-width: 600px) {
+    &:hover {
+      background-color: rgba($color: $basic_green-2, $alpha: 0.6);
+    }
+  }
+}
+
+.default {
+  background-color: $basic_grey;
+
+  @media (min-width: 600px) {
+    &:hover {
+      background-color: $special_grey-2;
+    }
+  }
+}

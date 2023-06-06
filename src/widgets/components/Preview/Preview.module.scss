@@ -1,0 +1,20 @@
+.preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  height: calc(696px - 100px);
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 300px;
+  }
+
+  .img {
+    position: relative;
+    margin-right: 210px;
+  }
+}

@@ -1,0 +1,42 @@
+@import "/src/app/styles/variables";
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.remove {
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.4;
+
+  @media (min-width: 600px) {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $status_error;
+      opacity: 1;
+    }
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.payes {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  .content,
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}

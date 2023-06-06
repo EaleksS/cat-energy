@@ -1,0 +1,58 @@
+@import "/src/app/styles/variables";
+
+.work {
+  position: relative;
+
+  @media (min-width: 600px) {
+    &:hover {
+      .content {
+        .img {
+          img {
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+
+  .bg {
+    position: absolute;
+    top: -40px;
+    right: 0;
+
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+
+    /* basic_grey */
+
+    color: #f2f2f2;
+    z-index: -1;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+
+    .img {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $basic_green;
+
+      img {
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

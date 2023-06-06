@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+:root {
+  font-family: "Oswald", sans-serif;
+}
+
+body,
+button,
+input {
+  font-family: "Oswald", sans-serif;
+}
+
+@media (max-width: 800px) {
+  body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+}

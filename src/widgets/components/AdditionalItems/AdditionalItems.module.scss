@@ -1,0 +1,67 @@
+@import "/src/app/styles/variables";
+
+.additional_items {
+  margin-top: 82px;
+  padding-top: 82px;
+
+  border-top: 2px solid $basic_green;
+  position: relative;
+
+  h2 {
+    position: absolute;
+    top: -25px;
+    background: #fff;
+    padding: 0 50px;
+    transform: translateX(-50px);
+  }
+
+  .content {
+    .items {
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 80px;
+
+      .item {
+        .additional {
+          display: grid;
+          grid-template-columns: 1fr 200px 100px 245px;
+          align-items: center;
+          padding: 17px 0;
+          border-top: 1px solid $special_grey;
+        }
+      }
+
+      .banner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 600px) {
+          &:hover {
+            .icon {
+              transform: scale(1.2);
+            }
+          }
+        }
+
+        .icon {
+          transition: all 0.2s ease-in-out;
+        }
+
+        &_img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "/src/app/styles/variables";
+
+.footer {
+  background: $basic_grey;
+
+  .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 149px;
+
+    .social {
+      display: flex;
+      align-items: center;
+
+      color: $special_dark-grey;
+      gap: 1rem;
+
+      .icon {
+        cursor: pointer;
+
+        @media (min-width: 600px) {
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            color: $basic_green;
+          }
+        }
+      }
+    }
+  }
+}

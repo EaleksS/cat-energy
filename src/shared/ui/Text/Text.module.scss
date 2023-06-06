@@ -1,0 +1,36 @@
+@import "/src/app/styles/variables";
+
+.h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  /* identical to box height, or 100% */
+}
+
+.h3 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+}
+
+.p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+}
